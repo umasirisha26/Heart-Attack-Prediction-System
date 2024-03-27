@@ -1,0 +1,85 @@
+/* input.css */
+
+/* Ensure the background image covers the entire screen */
+.image {
+    background: url('https://www.heart.org/-/media/Images/News/2023/November-2023/1110RRNewRiskEquations_SC.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh; /* Ensure the div covers at least the viewport height */
+    width: 100%;
+}
+
+/* Style for the container */
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    border-radius: 10px;
+    padding: 50px; /* Add padding to the container */
+    max-width: 600px; /* Set maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+}
+h1{
+    font-style: 'serif';
+    padding-bottom: 25px;
+    font-size: 50px;
+    text-align: center;
+}
+
+/* Style for the form elements */
+.forms label {
+    display: block; /* Ensure labels are displayed on their own lines */
+    text-align: left; /* Align labels to the left */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-bottom: 10px; /* Add spacing between labels */
+}
+
+.forms select,
+.forms input[type="number"] {
+    width: calc(100% - 22px); /* Make input fields and select full width */
+    padding: 10px; /* Add padding inside input fields and select */
+    margin-bottom: 20px; /* Add spacing between input fields */
+    border: 1px solid #ccc; /* Add border for input fields */
+    border-radius: 5px; /* Add rounded corners for input fields */
+}
+
+.forms button {
+    width: 100%; /* Make button full width */
+    padding: 15px; /* Add padding to the button */
+    margin-top: 20px; /* Add spacing above the button */
+    background-color: #4CAF50; /* Green background color */
+    color: white; /* White text color */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Add rounded corners to the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Hover effect for form button */
+.forms button:hover {
+    background-color: #097f0f; /* Darker green background color on hover */
+}
+
+/* Style for text */
+.text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.btn{
+    font-family: 'serif';
+    font-size: 20px;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #37c83ecf;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #20bc28;
+}

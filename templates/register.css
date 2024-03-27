@@ -1,0 +1,72 @@
+body{
+    background-image: url('https://www.healthkart.com/connect/wp-content/uploads/2021/09/900x500_banner_HK-Connect_How-to-Improve-Heart-Health-_-Points-To-Keep-In-Mind.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+}
+h1{
+    font-style: 'serif';
+    padding-bottom: 25px;
+    font-size: 50px;
+    text-align: center;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    padding-left: 65px;
+    padding-top:  80px;
+    padding-right: 70px;
+    padding-bottom: 80px;
+}
+p{
+     padding-left: 40px;
+     font-size: 25px;
+}
+.forms{
+    justify-content: center;
+    text-align: center;
+}
+.forms input[type="text"],
+.forms input[type="password"],
+.forms button {
+    width: 100%; /* Make input fields and button full width */
+    padding: 10px; /* Add padding inside input fields and button */
+    margin-bottom: 10px; /* Add spacing between input fields and button */
+    border: 1px solid #ccc; /* Add border for input fields */
+    border-radius: 5px; /* Add rounded corners for input fields and button */
+}
+
+.forms input[type="text"],
+.forms input[type="password"] {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 20px;
+    margin-top:5px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #19881e;
+}
+
+.forms label{
+    text-align: center;
+    font-family: 'georgia';
+    font-size: 25px;
+}
+.text{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+}

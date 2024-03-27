@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register.css') }}">
+    <title>User Registration</title>
+</head>
+<body>
+  <div class="container">
+    <div class="forms">
+      <h1>User Registration</h1>
+      <form id="registrationForm">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required autocomplete="off" required><br><br>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" required required autocomplete="off"><br><br>
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required required autocomplete="off"><br><br>
+          <button type="submit" class="btn">Register</button>
+          <div id="message" class="text"></div>
+          <!-- Login button (hidden by default) -->
+          <button id="loginButton" class="btn" style="display: none;" onclick="window.location.href='input.html';">Login</button>
+
+
+      </form>
+    </div>
+    <a href="/login.html" class="btn">Back</a>
+  </div>
+
+  <script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Retrieve input values
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      // Check if the username already exists in localStorage
+      if (localStorage.getItem(username)) {
+        document.getElementById("message").innerText = "Username already in use!";
+      } else {
+        // Store the username-password pair in localStorage
+        localStorage.setItem(username, password);
+        document.getElementById("message").innerText = "Registration successful!";
+        
+        // Show the login button
+        document.getElementById("loginButton").style.display = "block";
+      }
+    });
+  </script>
+</body>
+</html>

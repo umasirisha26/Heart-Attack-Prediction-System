@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='register.css') }}">
+    <title>User Authentication</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Sign In</h1>
+        <div class="center">
+            <form id="loginForm" class="forms">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required autocomplete="off"><br><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required autocomplete="off"><br><br>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div id="message" class="text"></div>
+            <p class="not-registered">Not registered? <a href="register.html">Create an account</a></p><br>
+            <a href="/" class="btn">Back</a>
+        </div>
+        
+    </div>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            
+            // Retrieve input values
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            // Check if the username already exists in localStorage
+            if (localStorage.getItem(username)) {
+                // If the user is already registered, check if password matches
+                var storedPassword = localStorage.getItem(username);
+                if (password === storedPassword) {
+                    // If password matches, login successful
+                    document.getElementById("message").innerText = "Login successful!";
+                    // Redirect to the input page
+                    window.location.href = "input.html"; // Replace "input.html" with the actual input page URL
+                } else {
+                    // If password does not match, display error message
+                    document.getElementById("message").innerText = "Invalid password!";
+                }
+            } else {
+                // If the username does not exist, prompt user to register
+                document.getElementById("message").innerText = "User not registered! Please create an account";
+            }
+        });
+    </script>
+</body>
+</html>

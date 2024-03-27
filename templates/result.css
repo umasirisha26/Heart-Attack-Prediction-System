@@ -1,0 +1,86 @@
+body {
+    background-image: url('https://www.cfcg.com/images/themegraphics/1610117642content_bar_1_background1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Montserrat';
+    font-size: 48px;
+}
+
+.result {
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.negative {
+    color: #2f2d2d;
+    font-size: 30px;
+    font-family: georgia;
+    justify-content:center;
+    text-align:center;
+}
+
+.negative h2 {
+    color: #190101;
+    margin-top: 0;
+    font-size: 35px;
+    font-family: 'Raleway';
+}
+
+p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+.positive {
+    color: #2f2d2d;
+    font-size: 30px;
+    font-family: georgia;
+    justify-content:center;
+    text-align:center;
+}
+.positive h2 {
+    color: #190101;
+    margin-top: 0;
+    font-size: 35px;
+    font-family: 'Raleway';
+}
+.btn {
+    display: inline-block;
+     /* Adjust the margin as needed */
+    font-size: 18px;
+    padding: 10px 35px;
+    background-color: #009933;
+    font-weight : bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn:hover {
+    background-color: #20bc28;
+}

@@ -1,0 +1,184 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('https://wp02-media.cdn.ihealthspot.com/wp-content/uploads/sites/494/2022/03/11214930/iStock-1319855785.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keep background fixed while scrolling */
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container1 {
+    max-width: 800px;
+    margin-bottom: 10px ;
+    justify-content: center;
+    margin-left: 350px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    color: #333;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 1000;
+    margin-bottom: 50px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px; /* Adjusted max-width */
+}
+
+header h1 {
+    font-size: 40px; /* Adjusted font size */
+    font-weight: bold;
+    padding: 15px;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+    font-family: 'Montserrat'
+}
+header h2 {   
+    margin-left: 20px; /* Add spacing before the second line */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap; /* Prevent flex items from wrapping */
+    margin-right: 50px;
+    
+}
+
+nav ul li {
+    margin-right: 30px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 27px;
+    font-family: 'georgia';
+}
+
+nav ul li a:hover {
+    color: #0b870f; /* Hover color */
+}
+.custom-arrow-list {
+    list-style: none;
+    padding-left: 160px; /* Adjust as needed for indentation */
+}
+
+.custom-arrow-list li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 10px; /* Adjust as needed for spacing between list items */
+}
+
+.custom-arrow-list li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust arrow width */
+    height: 20px; /* Adjust arrow height */
+    background-image: url('https://i.pinimg.com/736x/8e/10/56/8e10565c12656c5d008e58f1cec2853e.jpg');
+    background-size: contain; /* Ensure the arrow fits within the specified width and height */
+    background-repeat: no-repeat; /* Prevent repeating the arrow image */
+    padding-right: 10px;
+}
+
+
+/* Sections */
+.section {
+    padding: 40px 0;
+    text-align: center; /* Center align content */
+}
+.section ul li{
+    font-size: 25px;
+    font-family:'georgia';
+    text-align: left;
+    
+}
+
+.container1 h2{
+    font-size: 30px;
+    font-family: 'georgia';
+    padding: 15px;
+}
+
+.container1 p{
+    font-size: 25px;
+    font-family: 'georgia';
+   
+}
+.container .section {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 30px; /* Font size for features section */
+    font-family: Georgia, serif; /* Font style for features section */
+}
+
+/* Buttons */ 
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    margin: 20px;
+    background-color: #4caf50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    font-family: 'georgia';
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 60px; /* Add margin top to make space for fixed header */
+}
+
+footer p {
+    margin: 0;
+}
